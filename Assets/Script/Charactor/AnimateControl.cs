@@ -32,6 +32,10 @@ public class AnimateControl : MonoBehaviour
     // Update is called once per frame
     
     public void ActionAttackA(bool input) {
+        if (input == true) {
+            anim.enabled = false;
+            anim.enabled = true;
+        }
         anim.SetBool("AttackA", input);
     }
     public void ActionAttackB(bool input) {
